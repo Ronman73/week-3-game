@@ -1,0 +1,100 @@
+body
+{
+	width: 100%;
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+#playerDiv{
+	text-align: center;
+}
+#playerPic {
+	height: 80%;
+	width: 80%;
+}
+#bg {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-image: url('../images/bgs/oracle_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#centralDiv {
+	text-align: center;
+	font-weight: bold;
+}
+ @font-face { font-family: SFSportsNight; src: url('SFSportsNight.TTF'); } 
+ /* This font would not work, I could not get it to go. */
+
+#centralDiv,#teamName,#titleContainer {
+	font: 20px 'SFSportsNight';
+}
+
+#currentWord {
+	letter-spacing: 2px;
+}
+#firstContainer {
+	height: 100%;
+}
+#secondContainer {
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+}
+#secondContainer > .row:first-child {
+	margin-top: 5%;
+}
+#teamName {
+	font: 40px 'SFSportsNight';
+	text-align: center;
+}
+#titleContainer{
+	font: 50px 'SFSportsNight';
+	text-align: center;
+}
+.container-fluid {
+	height: 100%;
+}
+.opacity {
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+
+  /* Netscape */
+  -moz-opacity: 0.5;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+
+  /* Good browsers */
+  opacity: 0.5;
+}
+.fireFont {
+	color: #fff;
+	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+	font: 20px 'SFSportsNight';
+}
+.whiteFont {
+	color: #fff;
+	font: 20px 'SFSportsNight';
+}
+.whiteBorder {
+	border: 2px solid #FFF;
+}
+.fireBorder {
+	box-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+}

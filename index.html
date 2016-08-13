@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman Game</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/vendor/jquery/jquery-2.0.0.min.js"></script>
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-theme.min.css">
+	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div id="bg"></div>
+	<div class="container-fluid">
+        <div class="row" id="firstContainer">
+        	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2" id="secondContainer">
+				<div class="row fireFont" id="titleContainer">
+					<h1>Basketball Hangman</h1>
+				</div>
+	        	<div class="row" id="centralContainer">
+	        		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="rightDiv">
+		            	<div class="row">
+			            	<audio id="myAudio" src="">
+								The audio cannot be played.
+							</audio>
+		            		<div id="playerDiv" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<img src="assets/images/bgs/dribbling.gif" alt="" id="playerPic">
+		            		</div>
+		            	</div>
+		        		<div class="row fireFont" id="teamName">
+		            		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+		            	</div>
+		            </div>
+		            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 fireFont" id="centralDiv">
+		            	<div class="row">
+		            		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p>Press any key to get started!</p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+		            		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p>Wins!</p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p id="winsQty">0</p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+		           			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p>Current Word</p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p id="currentWord"></p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+		            		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p>Amount of Guesses Remaining</p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p id="guessesRemaining">0</p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+		            		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p>Letters Guessed</p>
+		            		</div>
+		            	</div>
+		            	<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		            			<p id="charactersGuessed">0</p>
+		            		</div>
+		            	</div>
+		            </div>
+	        	</div>
+        	</div>
+        </div>
+    </div>
+	<script src="assets/javascript/game.js"></script>
+	
+</body>
+</html>
